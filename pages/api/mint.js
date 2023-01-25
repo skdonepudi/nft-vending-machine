@@ -5,10 +5,13 @@ export default function handler(req, res) {
   const { signer } = req.query;
 
   // pick 1 from n total
-  //const randomEdition =
-  //Math.floor(Math.random() * process.env.NFT_COLLECTION_SIZE) + 1;
+  const randomEdition =
+    Math.floor(Math.random() * process.env.NFT_COLLECTION_SIZE) + 1;
 
-  const nftDataFile = path.join(process.env.NFT_COLLECTION_PATH, `1-nft.json`);
+  const nftDataFile = path.join(
+    process.env.NFT_COLLECTION_PATH,
+    `${randomEdition}-nft.json`
+  );
 
   const commandstr = `metaboss mint one --keypair ${process.env.MERCHANT_KEYPAIR_PATH} --nft-data-file ${nftDataFile} --receiver ${signer} --rpc ${process.env.NEXT_PUBLIC_RPC_URL}`;
 
