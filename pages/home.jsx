@@ -24,11 +24,11 @@ export default function Home({ cls }) {
   let amount = 0;
   console.log("color", cls);
   if (cls === "Silver") {
-    amount = 0.5;
+    amount = 0.1;
   } else if (cls === "Gold") {
-    amount = 10;
+    amount = 5;
   } else if (cls === "Diamond") {
-    amount = 25;
+    amount = 10;
   }
   console.log("amount", amount);
 

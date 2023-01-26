@@ -5,8 +5,7 @@ export default function handler(req, res) {
   const { signer } = req.query;
 
   // pick 1 from n total
-  const randomEdition =
-    Math.floor(Math.random() * process.env.NFT_COLLECTION_SIZE) + 1;
+  const randomEdition = 2;
 
   const nftDataFile = path.join(
     process.env.NFT_COLLECTION_PATH,

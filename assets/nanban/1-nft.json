@@ -1,0 +1,13 @@
+{
+	"name": "Nanban Foundation",
+	"symbol": "NBN",
+	"uri": "https://arweave.net/7VcpohM6wWqHbrRroCzyOgGdG-tkXIZ1Qaz9KtEN17I",
+	"seller_fee_basis_points": 200,
+	"creators": [
+		{
+			"address": "Ga9vkrDkr65cGj2koDWM9kXZAVUAwZbjTMGZYP9vEF9U",
+			"verified": true,
+			"share": 100
+		}
+	]
+}
